@@ -1,0 +1,416 @@
+/* 공통 */
+#wrap {
+    width: 100%;
+    min-width: 1600px;
+    /* position: relative; */
+}
+
+#header,
+#footer,
+#mainvisual,
+#subvisual1,
+#container {
+    width: 1920px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 1410px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 헤더 */
+#header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 {
+    margin-left: 35px;
+}
+#header h1 a {
+}
+
+#header .top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 35px;
+}
+#header .top-menu li {
+}
+#header .top-menu li a {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+#header .top-menu li a::after {
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 1px;
+    background: #999;
+    margin-left: 10px;
+}
+
+#header .top-menu li:last-of-type a::after {
+    display: none;
+}
+
+#header .top-menu .all-menu {
+    padding: 0 20px;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+#header .nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#header .nav .gnb {
+    display: flex;
+}
+#header .nav .gnb li:hover a {
+    color: blue;
+}
+#header .nav .gnb li a {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+/*  */
+
+/* 푸터 */
+#footer {
+    width: 100%;
+    height: auto;
+    background: #111b2a;
+    color: #fff;
+}
+
+#footer a {
+    color: #fff;
+}
+/* #footer div{ border: 1px solid #fff; } */
+
+#footer .inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer .sns-icons {
+    width: 500px;
+}
+#footer .sns-icons .icons {
+    display: flex;
+}
+#footer .sns-icons .icons li {
+    width: 70px;
+    height: 70px;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#footer .sns-icons .icons li img {
+    opacity: 0.5;
+}
+
+#footer .sns-icons .icons li:hover img {
+    opacity: 1;
+}
+#footer .sns-icons .icons li:hover {
+    background: rgb(0, 81, 255);
+    border: 0.5px solid rgb(0, 81, 255);
+}
+
+#footer .inf {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+}
+#footer .inf img {
+    margin: 20px 0;
+}
+#footer .inf p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#footer .family {
+    width: 500px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer .family .title {
+    position: relative;
+}
+
+#footer .family .title::after {
+    content: '\e936';
+    font-family: xeicon !important;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+#footer .family .title a {
+    display: block;
+    width: 230px;
+    height: 70px;
+    border: 0.5px solid #fff;
+    line-height: 70px;
+    border-radius: 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+#footer .family ul {
+}
+#footer .family ul li {
+    display: none;
+}
+#footer .family ul li a {
+    display: block;
+    width: 230px;
+    height: 70px;
+    border: 0.5px solid #fff;
+    line-height: 70px;
+    border-radius: 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+#footer .foot-menu {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50px;
+}
+#footer .foot-menu li {
+    margin-left: 50px;
+}
+#footer .foot-menu li a {
+    line-height: 50px;
+    display: block;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#footer .foot-txt {
+    font-size: 12px;
+    opacity: 0.5;
+    text-align: center;
+    background: #08111f;
+    line-height: 40px;
+    height: 40px;
+}
+
+/* 메인 공통 */
+
+.main {
+}
+.main .sub-tit {
+    font-size: 12px;
+    color: #cacaca;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.main .sub-tit span::before {
+    content: '';
+    width: 120px;
+    height: 1px;
+    background: #cacaca;
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: middle;
+}
+.main h3 {
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main .sub-ex {
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* 메인 버튼 공통 */
+
+.main p.more {
+    width: 220px;
+    height: 70px;
+    border-radius: 35px;
+    border: 3px solid blue;
+    position: absolute;
+    overflow: hidden;
+}
+
+.main p.more a {
+}
+
+.main p.more a i {
+    margin-left: 20px;
+}
+
+.main p.more a span {
+    color: blue;
+    font-size: 20px;
+    line-height: 70px;
+    margin-left: 20px;
+    transition: 0.5s;
+    z-index: 1000;
+    position: relative;
+}
+
+.main p.more a::after {
+    content: '';
+    width: 250px;
+    height: 75px;
+    background: blue;
+    display: block;
+    transform: skewX(15deg);
+    position: absolute;
+    top: 0;
+    left: -120%;
+    transition: 0.5s;
+}
+
+.main p.more:hover a::after {
+    left: -10%;
+}
+
+.main p.more:hover a span {
+    color: #fff;
+}
+
+/* 하단바 */
+.subnav {
+}
+.subnav p {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+/* 하단바 - 왼쪽*/
+
+.left {
+    width: 140px;
+    height: 140px;
+    background: #326aff;
+    border-radius: 30px;
+    position: fixed;
+    left: 50px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left a {
+    display: block;
+    text-align: center;
+}
+.left a img {
+}
+.left a strong {
+    display: block;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 12px;
+}
+.left a p {
+}
+
+/* 하단바 - 오른쪽*/
+.right {
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    width: 80px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.right .back-top {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2b2b2b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .sidebar {
+}
+.right .sidebar li {
+    width: 80px;
+    height: 80px;
+    background: #191919;
+    border-bottom: 1px solid #fff;
+}
+.right .sidebar li:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.right .sidebar li:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: none;
+}
+.right .sidebar li.on {
+    background: #326aff;
+}
+
+.right .sidebar li p a img {
+    transform: scale(0.7);
+}
+.right .sidebar li p a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    word-break: keep-all;
+    width: 80px;
+    height: 80px;
+    line-height: 15px;
+}

@@ -1,0 +1,9 @@
+#mainvisual .main-banner .txtarea strong, .txtarea h2, .txtarea p {
+    animation: anitxt-main 2s 1 forwards;
+}
+
+
+@keyframes anitxt-main {
+    0% { transform: translateY(50px); opacity: 0;}
+    100% { transform: translateY(0px); opacity: 1;}
+}
