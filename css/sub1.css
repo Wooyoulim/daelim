@@ -1,6 +1,7 @@
 /* 서브페이지 sub1~8 공통 */
 
 .sub1 {
+    margin: auto;
 }
 .sub1 .inner {
 }

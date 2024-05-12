@@ -1,0 +1,60 @@
+/* 서브페이지8 */
+
+.sub8 {
+}
+.sub8 .inner {
+    width: 1560px;
+}
+.sub8 table {
+    width: 100%;
+    background: #fff;
+}
+.sub8 table colgroup {
+    width: 100%;
+}
+.sub8 table .num {
+    width: 220px;
+}
+.sub8 table .title {
+    width: auto;
+}
+.sub8 table .date {
+    width: 230px;
+}
+.sub8 table tbody {
+}
+.sub8 table tbody tr {
+}
+.sub8 table tbody tr:nth-child(1) td {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center !important;
+    border-top: 2px solid #000;
+
+    line-height: 100px;
+}
+.sub8 table tbody tr td {
+    line-height: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.sub8 table tbody tr td:nth-of-type(2) {
+    text-align: left;
+    text-indent: 70px;
+}
+.sub8 .paging {
+    margin: 30px 0 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub8 .paging li {
+    margin-right: 30px;
+}
+.sub8 .paging li:last-child {
+    margin-right: 0;
+}
+.sub8 .paging li.on a {
+    color: #326aff;
+    font-weight: 700;
+}

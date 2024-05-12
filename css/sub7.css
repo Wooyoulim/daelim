@@ -1,0 +1,123 @@
+/* 서브페이지7 로그인 */
+
+.sub7 {
+    width: 1920px;
+    margin: auto;
+}
+.sub7 .inner {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub7 h3 {
+    font-size: 60px;
+    font-weight: 300;
+}
+.sub7 .select {
+    display: flex;
+    justify-content: center;
+}
+.sub7 .select li {
+    margin: 50px 0;
+    width: 255px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom: 5px solid #d9d9d9;
+}
+.sub7 .select li.on {
+    border-bottom: 5px solid #326aff;
+}
+.sub7 .select li.on a {
+    color: #326aff;
+}
+.sub7 .login_area {
+    width: 720px;
+    height: 750px;
+    border-radius: 40px;
+    background: #f7f7f7;
+    margin-bottom: 150px;
+}
+.sub7 .login_area .typing {
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 100px auto 50px;
+}
+.sub7 .login_area .typing input {
+    margin: 5px 0;
+    width: 510px;
+    height: 90px;
+    border-radius: 45px;
+    /* border: none; */
+    background: #fff;
+    font-size: 18px;
+    text-indent: 30px;
+}
+.sub7 .login_area .typing .check {
+    margin: 20px 0;
+}
+.sub7 .login_area .typing .check input[type='checkbox'] {
+    display: none;
+    vertical-align: middle;
+}
+.sub7 .login_area .typing .check input[type='checkbox'] + label {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: 1px solid #999;
+    margin-left: 15px;
+}
+.sub7 .login_area .typing .check input[type='checkbox'].on + label {
+    content: 'v';
+    color: #326aff;
+    background: #000;
+}
+.sub7 .login_area .typing .check input[type='checkbox'] #text {
+    line-height: 25px;
+    vertical-align: middle;
+}
+.sub7 .login_area .click {
+}
+.sub7 .login_area .click .btn {
+    width: 510px;
+    height: 90px;
+    border: 3px solid #326aff;
+    background: #fff;
+    text-align: center;
+    font-size: 22px;
+    color: #326aff;
+    font-weight: 500;
+    line-height: 90px;
+    border-radius: 45px;
+    margin: 10px auto;
+}
+.sub7 .login_area .click .btn.on {
+    background: #326aff;
+    color: #fff;
+}
+.sub7 .login_area .id_password {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.sub7 .login_area .id_password li {
+    font-size: 22px;
+    margin-right: 30px;
+}
+.sub7 .login_area .id_password li:last-child:before {
+    content: '';
+    height: 18px;
+    width: 1px;
+    background: #333;
+    display: inline-block;
+    margin-right: 20px;
+}
+.sub7 .login_area .id_password li:last-child {
+    margin-right: 0px;
+}

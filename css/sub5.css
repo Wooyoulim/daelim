@@ -1,0 +1,125 @@
+/* 서브페이지5 */
+
+.sub5 {
+    margin: 0 auto;
+    width: 1560px;
+}
+.sub5 .inner {
+    width: 1560px;
+}
+.sub5 .inner .search {
+    width: 100%;
+    height: 210px;
+    background: #fafbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub5 .search select:focus {
+    border-color: none;
+    outline: none;
+}
+.sub5 .search input:focus {
+    border-color: none;
+    outline: none;
+}
+.sub5 .inner .search .category {
+}
+.sub5 .inner .search select {
+    width: 300px;
+    height: 50px;
+    border: none;
+    background: none;
+    border-bottom: 3px solid #000;
+    margin-right: 30px;
+}
+.sub5 .inner .search .category select option {
+}
+.sub5 .inner .search input {
+    width: 360px;
+    height: 50px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #7a7a7a;
+}
+.sub5 .inner .search .find {
+    margin-left: 20px;
+    width: 135px;
+    line-height: 60px;
+    background: #326aff;
+    text-align: center;
+    border-radius: 30px;
+}
+.sub5 .inner .search .find a {
+    color: #fff;
+}
+.sub5 .inner .search .find a i {
+    margin-left: 10px;
+}
+.sub5 .inner .search .category .find a {
+}
+.sub5 .inner .map {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.sub5 .map img {
+    width: 780px;
+    height: 810px;
+}
+
+.sub5 .map .lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub5 .map .map_list {
+}
+.sub5 .map .map_list li {
+    width: 710px;
+    height: 100px;
+    border: 1px solid #326aff;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.sub5 .map .map_list li.on {
+    height: 250px;
+}
+.sub5 .map .map_list li h4 {
+    width: 650px;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px;
+    align-items: center;
+}
+.sub5 .map .map_list li h4 i {
+    cursor: pointer;
+}
+.sub5 .map .map_list li .info {
+    font-size: 14px;
+}
+
+.sub5 .map .map_list li span {
+    display: inline-block;
+    width: 130px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 30px;
+}
+.sub5 .map .number {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.sub5 .map .number a {
+    display: inline-block;
+    margin: 0 10px;
+}
+.sub5 .map .number a.on {
+    color: #326aff;
+}

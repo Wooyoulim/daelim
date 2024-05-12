@@ -2,58 +2,174 @@
 
 .sub3 {
 }
+.sub3 .inner {
+    margin: 0;
+    width: 1920px;
+}
 .sub3 .con1 {
+    width: 1920px;
+    height: 750px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-image: url(../images/content/sub3/care_img.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .sub3 .con1 em {
+    color: #fff;
 }
 .sub3 .con1 h3 {
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
 }
 .sub3 .con1 .intro {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
 }
 
 .sub3 .con2 {
+    width: 1570px;
+    margin: 0 auto;
 }
 .sub3 .con2 .careService {
+    display: flex;
+    justify-content: space-between;
+    margin: 200px 0;
 }
 .sub3 .con2 .careService li {
+    position: relative;
+    margin-right: 30px;
+}
+.sub3 .con2 .careService li:first-child {
+    width: 800px;
+    padding-right: 200px;
+}
+.sub3 .con2 .careService li:last-child {
+    margin-right: 0px;
 }
 .sub3 .con2 .careService li strong {
+    font-size: 45px;
+    text-align: center;
+    display: block;
+    letter-spacing: -3px;
 }
 .sub3 .con2 .careService li .intro1 {
+    text-align: center;
+    font-size: 22px;
 }
 .sub3 .con2 .careService li .intro {
+    position: absolute;
+    bottom: 50px;
+    padding: 30px;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    word-break: keep-all;
 }
 
 .sub3 .con3 {
+    width: 1570px;
+    margin: 0 auto;
 }
 .sub3 .con3 strong {
+    font-size: 45px;
+    text-align: center;
+    display: block;
+    letter-spacing: -3px;
 }
 .sub3 .con3 .subtxt {
+    text-align: center;
+    font-size: 22px;
 }
 .sub3 .con3 .careMind {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .sub3 .con3 .careMind li {
+    width: 520px;
+    height: 520px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.sub3 .con3 .careMind li:nth-child(1) {
+    background-image: url(../images/content/sub3/care_img03.png);
+}
+.sub3 .con3 .careMind li:nth-child(2) {
+    background-image: url(../images/content/sub3/care_img04.png);
+}
+.sub3 .con3 .careMind li:nth-child(3) {
+    background-image: url(../images/content/sub3/care_img05.png);
 }
 .sub3 .con3 .careMind li .main {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
 }
 .sub3 .con3 .careMind li .intro {
+    padding: 20px;
+    font-size: 22px;
+    color: #fff;
+    word-break: keep-all;
+    margin-bottom: 80px;
 }
 
 .sub3 .con4 {
+    width: 1570px;
+    margin: 300px auto;
 }
 .sub3 .con4 strong {
+    font-size: 45px;
+    text-align: center;
+    display: block;
+    letter-spacing: -3px;
 }
 .sub3 .con4 .subtxt {
+    text-align: center;
+    font-size: 22px;
 }
 .sub3 .con4 .realcare {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }
-.sub3 .con4 .realcare li {
+.sub3 .con4 .realcare li:first-child {
+    width: 850px;
+}
+.sub3 .con4 .realcare li:last-child {
+    width: 635px;
 }
 .sub3 .con4 .realcare li img {
 }
 .sub3 .con4 .realcare li .more {
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 500;
 }
 .sub3 .con4 .realcare li dl {
+    border-top: 1px solid #000;
+    width: 635px;
 }
 .sub3 .con4 .realcare li dl dt {
+    font-size: 22px;
+    font-weight: 500;
+    width: 635px;
+    padding: 60px 0;
+    border-bottom: 1px solid #dcdcdc;
 }
