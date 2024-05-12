@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/sublayout.css" />
         <link rel="stylesheet" href="css/content.css" />
+        <link rel="stylesheet" href="css/sub7.css" />
 
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
@@ -46,14 +47,35 @@
                 </nav>
             </header>
 
-            <section id="subvisual" class="banner7">
-                <h2>서브페이지7</h2>
-            </section>
-
             <main id="container" class="page sub7">
                 <section id="content">
                     <div class="inner">
-                        <h3>페이지 내용 7</h3>
+                        <h3>로그인</h3>
+                        <ul class="select">
+                            <li class="on"><a href="#">회원로그인</a></li>
+                            <li><a href="#">기업로그인</a></li>
+                        </ul>
+                        <div class="login_area">
+                            <div class="typing">
+                                <input type="text" placeholder="아이디" />
+                                <input type="text" placeholder="비밀번호" />
+                                <div class="check">
+                                    <input type="checkbox" id="checkbox1" class="on" />
+                                    <label for="checkbox1"></label>로그인 상태 유지
+                                    <input type="checkbox" id="checkbox1" />
+                                    <label for="checkbox1"></label>아이디 저장
+                                </div>
+                            </div>
+
+                            <div class="click">
+                                <p class="btn on">로그인</p>
+                                <p class="btn">회원가입</p>
+                            </div>
+                            <ul class="id_password">
+                                <li><a href="#">개인 아이디 찾기</a></li>
+                                <li><a href="#">개인 비밀번호 찾기</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -103,6 +125,63 @@
                 </ul>
                 <p class="foot-txt">COPYRIGHT@ 2021 DAELIM B&Co, LIMITED ALL RIGHT RESERVED.</p>
             </footer>
+            <div class="subnav left">
+                <a href="#"
+                    ><img src="images/main/doc_search.png" alt="돋보기 아이콘" />
+                    <strong>제품검색</strong>
+                    <p>원하시는 제품을 <br />검색해보세요</p></a
+                >
+            </div>
+
+            <div class="subnav right">
+                <ul class="sidebar">
+                    <li>
+                        <p>
+                            <a href="#"
+                                ><img
+                                    src="images/main/doc_home.png"
+                                    alt="매장찾기 아이콘"
+                                />매장찾기</a
+                            >
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="#"
+                                ><img
+                                    src="images/main/doc_qna.png"
+                                    alt="문의하기 아이콘"
+                                />문의하기</a
+                            >
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="#"
+                                ><img
+                                    src="images/main/doc_cate.png"
+                                    alt="카탈로그 아이콘"
+                                />카탈로그</a
+                            >
+                        </p>
+                    </li>
+                    <li class="on">
+                        <p>
+                            <a href="#"
+                                ><img
+                                    src="images/main/doc_dium.png"
+                                    alt="공식 온라인몰 바로가기 아이콘"
+                                />공식 온라인몰 바로가기</a
+                            >
+                        </p>
+                    </li>
+                </ul>
+                <div class="back-top">
+                    <i class="xi-angle-up"></i>
+                    <p>TOP</p>
+                </div>
+            </div>
         </div>
+        <script type="module" src="javascript/sub.js"></script>
     </body>
 </html>

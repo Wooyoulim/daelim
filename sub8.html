@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/sublayout.css" />
         <link rel="stylesheet" href="css/content.css" />
+        <link rel="stylesheet" href="css/sub8.css" />
 
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
@@ -47,13 +48,85 @@
             </header>
 
             <section id="subvisual" class="banner8">
-                <h2>서브페이지8</h2>
+                <div class="inner">
+                    <p class="subtitle">
+                        <img src="images/content/common/daelim_ico.png" alt="" />
+                        <span>DAELIM</span>
+                    </p>
+                    <h2>공지사항</h2>
+                    <p class="greeting">
+                        집안에서 가장 아름다운 공간을 책임지는 대림바스의 소식과 다양한 스토리를
+                        기록합니다.
+                    </p>
+                    <span class="bg">NOTICE</span>
+                </div>
             </section>
 
             <main id="container" class="page sub8">
                 <section id="content">
                     <div class="inner">
-                        <h3>페이지 내용 8</h3>
+                        <table>
+                            <caption>
+                                공지사항
+                            </caption>
+                            <colgroup>
+                                <col class="num" />
+                                <col class="title" />
+                                <col class="date" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>N0.</td>
+                                    <td>제목</td>
+                                    <td>작성일</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>
+                                        [보도자료] 대림바스, 강남 3구 하이엔드 아파트에 일체형비데
+                                        5만여 대 납품
+                                    </td>
+                                    <td>2024-04-30</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>
+                                        [보도자료] 대림바스, 한국산업의 브랜드파워(K-BPI) 2개 부문서
+                                        1위 차지
+                                    </td>
+                                    <td>2024-04-28</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>
+                                        [보도자료] 대림케어, 주방 상판 UV코팅 케어서비스 새롭게 선봬
+                                    </td>
+                                    <td>2024-04-24</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td>
+                                        [보도자료] 대림바스, 국내 특급 호텔∙리조트 시장 점유율 80%로
+                                        ‘1위’
+                                    </td>
+                                    <td>2024-04-23</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>
+                                        [보도자료] 대림바스, 국내 최초로 장루·요루 환자 위한 세척기
+                                        세트 개발
+                                    </td>
+                                    <td>2024-04-21</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="paging">
+                            <li class="on"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                        </ul>
                     </div>
                 </section>
             </main>
@@ -103,6 +176,63 @@
                 </ul>
                 <p class="foot-txt">COPYRIGHT@ 2021 DAELIM B&Co, LIMITED ALL RIGHT RESERVED.</p>
             </footer>
+            <div class="subnav left">
+                <a href="#"
+                    ><img src="images/main/doc_search.png" alt="돋보기 아이콘" />
+                    <strong>제품검색</strong>
+                    <p>원하시는 제품을 <br />검색해보세요</p></a
+                >
+            </div>
+
+            <div class="subnav right">
+                <ul class="sidebar">
+                    <li>
+                        <p>
+                            <a href="#"
+                                ><img
+                                    src="images/main/doc_home.png"
+                                    alt="매장찾기 아이콘"
+                                />매장찾기</a
+                            >
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="#"
+                                ><img
+                                    src="images/main/doc_qna.png"
+                                    alt="문의하기 아이콘"
+                                />문의하기</a
+                            >
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="#"
+                                ><img
+                                    src="images/main/doc_cate.png"
+                                    alt="카탈로그 아이콘"
+                                />카탈로그</a
+                            >
+                        </p>
+                    </li>
+                    <li class="on">
+                        <p>
+                            <a href="#"
+                                ><img
+                                    src="images/main/doc_dium.png"
+                                    alt="공식 온라인몰 바로가기 아이콘"
+                                />공식 온라인몰 바로가기</a
+                            >
+                        </p>
+                    </li>
+                </ul>
+                <div class="back-top">
+                    <i class="xi-angle-up"></i>
+                    <p>TOP</p>
+                </div>
+            </div>
         </div>
+        <script type="module" src="javascript/sub.js"></script>
     </body>
 </html>
