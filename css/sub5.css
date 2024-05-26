@@ -64,6 +64,11 @@
     display: flex;
     justify-content: space-between;
 }
+.sub5 #map {
+    width: 780px;
+    height: 810px;
+    border: 1px solid #000;
+}
 .sub5 .map img {
     width: 780px;
     height: 810px;

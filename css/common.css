@@ -166,12 +166,21 @@
     justify-content: center;
     align-items: center;
 }
+
 #footer .family .title {
-    position: relative;
+    position: absolute;
 }
 
 #footer .family .title::after {
     content: '\e936';
+    font-family: xeicon !important;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+#footer .family.on .title::after {
+    content: '\e930';
     font-family: xeicon !important;
     position: absolute;
     right: 20px;
@@ -189,21 +198,31 @@
     box-sizing: border-box;
     padding: 0 20px;
 }
+
 #footer .family ul {
+    position: absolute;
+    top: 40px;
+    width: 230px;
 }
-#footer .family ul li {
-    display: none;
+#footer .family li {
+    opacity: 0;
+    height: 0px;
+    transition: 0.5s;
 }
+#footer .family.on ul {
+    opacity: 1;
+    height: 140px;
+}
+
+#footer .family.on li {
+    opacity: 1;
+    height: 70px;
+}
+
 #footer .family ul li a {
     display: block;
-    width: 230px;
-    height: 70px;
-    border: 0.5px solid #fff;
-    line-height: 70px;
-    border-radius: 15px;
     font-size: 18px;
-    box-sizing: border-box;
-    padding: 0 20px;
+    padding: 10px;
 }
 
 #footer .foot-menu {
@@ -376,6 +395,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .right .sidebar {

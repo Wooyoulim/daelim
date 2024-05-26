@@ -17,18 +17,31 @@
     align-items: center;
     justify-content: center;
 }
+
 .sub1 .con1 h3 {
     font-size: 55px;
     font-weight: 700;
     text-align: center;
     color: #fff;
     margin-bottom: 40px;
+    margin-top: 500px;
+    opacity: 0;
+    transition: 1.5s;
+}
+.sub1 .con1 h3.on {
+    margin-top: 0px;
+    opacity: 1;
 }
 .sub1 .con1 .explain {
     font-size: 24px;
     font-weight: 300;
     text-align: center;
     color: #fff;
+    opacity: 0;
+    transition: 1.9s;
+}
+.sub1 .con1 .explain.on {
+    opacity: 1;
 }
 
 /* 콘2 */
@@ -41,6 +54,13 @@
 .sub1 .con2 .wrap {
     width: 1560px;
     margin: 0 auto;
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 1.5s;
+}
+.sub1 .con2 .wrap.on {
+    transform: translateY(0px);
+    opacity: 1;
 }
 .sub1 .con2 .since {
     margin-top: 130px;
@@ -107,6 +127,13 @@
 .sub1 .con3 .wrap {
     width: 1560px;
     margin: 0 auto;
+    opacity: 0;
+    transform: translateY(700px);
+    transition: 1.5s;
+}
+.sub1 .con3 .wrap.on {
+    transform: translateY(450px);
+    opacity: 1;
 }
 .sub1 .con3 h4 {
     font-size: 30px;
@@ -158,8 +185,22 @@
     color: #fff;
     font-size: 34px;
     margin-bottom: 30px;
+    margin-top: 500px;
+    opacity: 0;
+    transition: 1.5s;
 }
 .sub1 .con4 .explain {
     color: #fff;
     font-size: 18px;
+    opacity: 0;
+    transition: 1.9s;
+}
+
+.sub1 .con4 h3.on {
+    margin-top: 0px;
+    opacity: 1;
+}
+
+.sub1 .con4 .explain.on {
+    opacity: 1;
 }
