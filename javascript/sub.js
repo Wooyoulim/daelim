@@ -78,7 +78,7 @@ const store = () => {
         postMod,
         pageNumber,
         totalPage,
-        posts = '';
+        posts = storeData;
 
     const pageList = (num) => {
         $ul.innerHTML = '';
@@ -98,6 +98,140 @@ const store = () => {
             $ul.append(li);
             li.append(h4, adr, tel, fax);
         }
+        //li 클릭 이벤트
+
+        let $icon = getAll('.sub5 .map_list i');
+        let $lis = getAll('.sub5 .map_list li');
+
+        $lis[0].classList.add('on');
+        $icon[0].classList.replace('xi-minus', 'xi-plus');
+
+        $icon.forEach((item, idx) => {
+            item.addEventListener('click', (e) => {
+                $icon.forEach((icons) => {
+                    icons.classList.replace('xi-plus', 'xi-minus');
+                });
+                $lis.forEach((li) => {
+                    li.classList.remove('on');
+                });
+                $lis[idx].classList.add('on');
+                e.currentTarget.classList.replace('xi-minus', 'xi-plus');
+            });
+        });
+
+        //검색결과
+
+        let $search = get('.sub5 .search .txt');
+        let $btn = get('.sub5 .find');
+        let $area = get('.sub5 .location select ');
+        let $category = get('.sub5 .category select ');
+        let text = '';
+        let location = '';
+        let text1 = '서울';
+        let text2 = '충남';
+        let text3 = '제주';
+        let text4 = '울산';
+        let text5 = '경기';
+        let text6 = '전체';
+
+        $category.addEventListener('change', (e) => {
+            $ul.innerHTML = '';
+            let ran = Math.floor(Math.random() * 4) + 1;
+            let result1 = storeData.slice(ran);
+            for (let i = 0; i < ran; i++) {
+                const li = document.createElement('li');
+                const h4 = document.createElement('h4');
+                const adr = document.createElement('div');
+                const tel = document.createElement('div');
+                const fax = document.createElement('div');
+                const date = document.createElement('td');
+
+                h4.innerHTML = `${posts[i].name}<i class="xi-minus"></i>`;
+                adr.innerHTML = `<span>ADRESS</span>${posts[i].addr}`;
+                tel.innerHTML = `<span>TEL</span>${posts[i].tel}`;
+                fax.innerHTML = `<span>FAX</span>--`;
+            }
+
+            result1.forEach((li, idx) => {
+                posts = result1;
+                totalPage = posts.length;
+
+                postMod = totalPage % postPerPage;
+                firstPost = (currentPage - 1) * postPerPage;
+                lastPost =
+                    currentPage === pageNumber && postMod !== 0
+                        ? firstPost + postMod
+                        : firstPost + postPerPage;
+                pageNumber = Math.ceil(totalPage / postPerPage);
+
+                makePaging();
+                pageList(currentPage);
+            });
+        });
+
+        $btn.addEventListener('click', (e) => {
+            $ul.innerHTML = '';
+            text = $search.value;
+            location = $area.value;
+
+            let result = storeData.filter((item) => {
+                if (text !== '') {
+                    return (item.name && item.addr).includes(text);
+                } else if (location === text1) {
+                    if (text !== '') {
+                        return (item.name && item.addr).includes(text1).includes(text);
+                    } else {
+                        return (item.name && item.addr).includes(text1);
+                    }
+                } else if (location === text2) {
+                    if (text !== '') {
+                        return (item.name && item.addr).includes(text2).includes(text);
+                    } else {
+                        return (item.name && item.addr).includes(text2);
+                    }
+                } else if (location === text3) {
+                    if (text !== '') {
+                        return (item.name && item.addr).includes(text3).includes(text);
+                    } else {
+                        return (item.name && item.addr).includes(text3);
+                    }
+                } else if (location === text4) {
+                    if (text !== '') {
+                        return (item.name && item.addr).includes(text4).includes(text);
+                    } else {
+                        return (item.name && item.addr).includes(text4);
+                    }
+                } else if (location === text5) {
+                    if (text !== '') {
+                        return (item.name && item.addr).includes(text5).includes(text);
+                    } else {
+                        return (item.name && item.addr).includes(text5);
+                    }
+                } else if (location === text6) {
+                    if (text !== '') {
+                        return pageList().includes(text);
+                    } else {
+                        return pageList();
+                    }
+                }
+            });
+
+            result.forEach((li, idx) => {
+                posts = result;
+                totalPage = posts.length;
+
+                postMod = totalPage % postPerPage;
+                firstPost = (currentPage - 1) * postPerPage;
+                lastPost =
+                    currentPage === pageNumber && postMod !== 0
+                        ? firstPost + postMod
+                        : firstPost + postPerPage;
+                pageNumber = Math.ceil(totalPage / postPerPage);
+
+                makePaging();
+                pageList(currentPage);
+            });
+        });
     };
 
     const makePaging = () => {
@@ -142,57 +276,6 @@ const store = () => {
     getData();
 
     //여기까지 게시판
-
-    //검색결과
-
-    let $search = get('.sub5 .search .txt');
-    let $btn = get('.sub5 .find');
-    let text = '';
-
-    $btn.addEventListener('click', (e) => {
-        $ul.innerHTML = '';
-        text = $search.value;
-        let result = storeData.filter((item) => {
-            return (item.name && item.addr).includes(text);
-        });
-
-        result.forEach((li, idx) => {
-            posts = result;
-            totalPage = posts.length;
-
-            postMod = totalPage % postPerPage;
-            firstPost = (currentPage - 1) * postPerPage;
-            lastPost =
-                currentPage === pageNumber && postMod !== 0
-                    ? firstPost + postMod
-                    : firstPost + postPerPage;
-            pageNumber = Math.ceil(totalPage / postPerPage);
-
-            makePaging();
-            pageList(currentPage);
-        });
-    });
-
-    //
-
-    let $icon = getAll('.sub5 .map_list i');
-    let $lis = getAll('.sub5 .map_list li');
-
-    $lis[0].classList.add('on');
-    $icon[0].classList.replace('xi-minus', 'xi-plus');
-
-    $icon.forEach((item, idx) => {
-        item.addEventListener('click', (e) => {
-            $icon.forEach((icons) => {
-                icons.classList.replace('xi-plus', 'xi-minus');
-            });
-            $lis.forEach((li) => {
-                li.classList.remove('on');
-            });
-            $lis[idx].classList.add('on');
-            e.currentTarget.classList.replace('xi-minus', 'xi-plus');
-        });
-    });
 };
 
 //서브6 : 자료실
